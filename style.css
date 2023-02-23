@@ -1,0 +1,31 @@
+html,
+body {
+  font-family: "Norse";
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+img {
+  max-width: 300px;
+}
+
+.header {
+  background-color: #4b545f;
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px;
+  font-size: 28px;
+}
+
+.header-link {
+  color: white;
+  text-decoration: none;
+}
