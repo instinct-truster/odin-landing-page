@@ -1,6 +1,6 @@
 :root {
   --color-neutral: #4b545f;
-  --container-width: 70.5rem;
+  --container-width: 90rem;
 }
 
 html,
@@ -9,6 +9,15 @@ body {
   display: flex;
   flex: 1;
   flex-direction: column;
+}
+
+button {
+  all: unset;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+button:hover {
+  cursor: pointer;
 }
 
 h1 {
@@ -50,6 +59,7 @@ a {
 .header > .inner-container,
 .splash-section > .inner-container {
   justify-content: space-between;
+  gap: 2rem;
 }
 
 .header > .inner-container > ul {
@@ -57,6 +67,7 @@ a {
   align-items: center;
   gap: 1rem;
   padding: 1rem;
+  padding-right: 3rem;
   font-size: 1.75rem;
 }
 
@@ -113,21 +124,155 @@ li:hover {
 .splash-right {
   background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent),
     url("/assets/Denmark.jpg");
-  border-radius: 0.5rem;
+  border-radius: 1rem;
   display: flex;
   flex: 1;
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
   padding-bottom: 1rem;
-  min-height: 360px;
-  margin: 1rem;
+  min-height: 320px;
+  margin: 2rem;
   background-size: cover;
 }
 
-.splash-button {
+.splash-left > button {
+  font-size: large;
 }
 
 .splash-right > p {
   font-size: 2rem;
+}
+
+p {
+  font-size: x-large;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.img-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 4rem;
+}
+
+.img-section > h2 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin: 2rem;
+}
+
+.img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 12.5rem;
+  gap: 2rem;
+}
+
+.square {
+  border: 4px solid rgb(12, 97, 157);
+  border-radius: 20px;
+  width: 10rem;
+  height: 10rem;
+  overflow: hidden;
+}
+
+.card-image {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  object-fit: cover;
+}
+
+.quote {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #4b545f;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: aliceblue;
+  padding: 3rem 20rem;
+}
+
+.quote h2 {
+  font-size: 36px;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.quote > p {
+  font-size: 28px;
+  font-weight: bolder;
+  align-self: flex-end;
+  padding: 4rem;
+}
+
+.sign-up {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5em 13em;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #3882f6;
+  padding: 3em;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.container button {
+  border: 2px solid white;
+}
+
+strong {
+  font-size: 24px;
+  color: #fff;
+}
+
+footer {
+  background-color: #0e1d3c;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 2em 0;
+}
+
+.cta-btn {
+  color: white;
+  padding: 0.5rem 1.125rem;
+  border-radius: 0.5rem;
+}
+
+.btn-outlined {
+  outline: 0.0625rem solid white;
+}
+
+.btn-filled {
+  background-color: #3882f6;
+}
+.secondary {
+  color: white;
+}
+
+strong {
+  font-weight: 700;
+  margin: 2rem 0;
 }
